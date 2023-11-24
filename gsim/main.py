@@ -25,6 +25,8 @@ from __future__ import absolute_import, division, print_function
 
 import sys
 try:
+    from gi import require_version
+    require_version('Gtk', '4.0')
     from gi.repository import Gtk
     from gi.repository import Gdk
     from gi.repository import GObject
